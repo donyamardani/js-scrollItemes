@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgb(232, 226, 218);
+    overflow-x: hidden;
 }
 section{
     display: flex;
@@ -28,4 +29,15 @@ h1{
     width: 400px;
     height: 200px;
     border-radius: 20px;
+   /* transform: scale(0);*/
+   
+    transition: all .5s;
+    transform: translateX(400%);
+}
+section div:nth-child(odd){
+     transform: translateX(-400%);
+}
+.show{
+    /*transform: scale(1);*/
+    transform:translateX(0) !important;
 }
